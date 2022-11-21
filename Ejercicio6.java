@@ -6,19 +6,26 @@ menor o mayor que el número secreto.
 public class Ejercicio6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = (int)Math.random()*100;
-        int numIntro = sc.nextInt();
-        System.out.println(numIntro);
         for(int i = 1; i<=5;i++){
-            if (n>numIntro){
-                System.out.println("El numero introducido es menor que el numero secreto");
-            }else {
+            int n = (int)Math.random()*101;
+            int numIntro = sc.nextInt();
+            System.out.println(numIntro);
+            
+            
+            if(n==numIntro){
+                System.out.println("Has adivinado el numero");
+            }else{
+                if (n>numIntro){
+                    System.out.println("El numero introducido es menor que el numero secreto");
+            }
+            else {
                 if (n<numIntro){
                     System.out.println("El numero introducido es mayor que el numero secreto");
                 }
             }
         }
         sc.close();
+        }
     }
 }
 

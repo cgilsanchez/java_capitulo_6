@@ -7,7 +7,7 @@ public class Ejercicio5 {
         Scanner sc = new Scanner(System.in);
         int maximo = 0;
         int minimo = 199;
-        for (int i = 1;i<=100;i++){
+        for (int i = 1;i<=50;i++){
             int num = (int)(Math.random()*100+100);
             System.out.println(num);
             if(num>maximo){
