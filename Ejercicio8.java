@@ -18,6 +18,7 @@ public class Ejercicio8 {
             case 1:
             System.out.print("1  |");
             break;
+
             case 2:
             System.out.print("  2|");
             break;
